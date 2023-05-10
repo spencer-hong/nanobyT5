@@ -4,9 +4,11 @@ from torch.utils.data import DataLoader
 from omegaconf import open_dict
 from datasets.iterable_dataset import IterableDataset
 from transformers import (
-    AutoTokenizer,
+    #AutoTokenizer,
     T5ForConditionalGeneration,
-    AutoConfig,
+    #AutoConfig,
+    T5Config,
+    ByT5Tokenizer
 )
 
 from .copied_utils import (
@@ -15,6 +17,8 @@ from .copied_utils import (
     tokenize_function,
     DataCollatorForNI,
 )
+
+import os
 
 
 def get_model(args, config):
@@ -37,18 +41,22 @@ def get_model(args, config):
 
 
 def get_config(args):
-    config = AutoConfig.from_pretrained(
-        args.model.name,
-    )
+    # config = AutoConfig.from_pretrained(
+    #     args.model.name,
+    # )
+    config = T5Config()
     config.dropout_rate = args.model.dropout
     return config
 
 
 def get_tokenizer(args):
-    tokenizer = AutoTokenizer.from_pretrained(
-        args.model.name,
-        use_fast=True
-    )
+    # tokenizer = AutoTokenizer.from_pretrained(
+    #     args.model.name,
+    #     use_fast=True
+    # )
+    
+    tokenizer = ByT5Tokenizer.from_pretrained("google/byt5-small")
+
     tokenizer.model_max_length = int(1e9)
 
     return tokenizer
@@ -56,24 +64,38 @@ def get_tokenizer(args):
 
 def load_dataset_splits(args):
     if args.mode == 'pt':
-        dataset = datasets.load_dataset(
-            'c4',
-            'en',
-            streaming=True,
-        )
+        # dataset = datasets.load_dataset(
+        #     'c4',
+        #     'en',
+        #     streaming=True,
+        # )
 
-        dataset = dataset.remove_columns(
-            ['timestamp', 'url']
-        )
+
+        os.chdir("/Users/kavisubramanyan/Documents/GitHub/nanobyT5")
+
+        train_dataset = datasets.load_from_disk("nanoT5/utils/local_data/train")
+        test_dataset = datasets.load_from_disk("nanoT5/utils/local_data/test")
+
+        train_dataset.to_iterable_dataset(num_shards=10)
+        test_dataset.to_iterable_dataset(num_shards=10)
+
+        # dataset = dataset.remove_columns(
+        #     ['timestamp', 'url']
+        # )
+
+        # dataset_splits = {
+        #     'train': dataset['train'],
+        #     'test': dataset['validation'],
+        # }
 
         dataset_splits = {
-            'train': dataset['train'],
-            'test': dataset['validation'],
+            'train' : train_dataset,
+            'test' : test_dataset
         }
 
-        assert (
-            dataset['train'].n_shards == 1024
-        ), "We want to have many shards for efficient processing with num_workes in PyTorch dataloader"
+        # assert (
+        #     dataset['train'].n_shards == 1024
+        # ), "We want to have many shards for efficient processing with num_workes in PyTorch dataloader"
     elif args.mode == 'ft':
         dataset_splits = datasets.load_dataset(
             args.data.exec_file_path,
@@ -91,6 +113,8 @@ def load_dataset_splits(args):
 def process_dataset(dataset_splits, args, tokenizer):
     if args.mode == 'pt':
         final_datasets = {}
+
+
 
         for split, dataset_split in dataset_splits.items():
 
@@ -117,7 +141,9 @@ def process_dataset(dataset_splits, args, tokenizer):
                 remove_columns=['text'],
             )
 
-            dataset_split = dataset_split.shuffle(buffer_size=10_000, seed=args.seed)
+            # dataset_split = dataset_split.shuffle(buffer_size=10_000, seed=args.seed)
+            dataset_split = dataset_split.shuffle(seed=args.seed)
+
             final_datasets[split] = dataset_split
     elif args.mode == 'ft':
         final_datasets = dataset_splits
@@ -178,8 +204,8 @@ def get_dataloaders(tokenizer, config, args):
 
         if args.mode == 'ft' and split == 'train':
             assert shuffle is True
-        else:
-            assert shuffle is False
+        # else:
+            # assert shuffle is False
 
         dataloaders[split] = DataLoader(
             dataset[split],

@@ -1,0 +1,11 @@
+[2023-05-10 14:05:15,833][Main][INFO] - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cpu
+
+Mixed precision type: no
+
+[2023-05-10 14:05:15,834][Main][INFO] - Working directory is /Users/kavisubramanyan/Documents/GitHub/nanobyT5/logs/2023-05-10/14-05-15
+[2023-05-10 14:05:18,328][neptune.internal.hardware.gpu.gpu_monitor][WARNING] - Info (NVML): NVML Shared Library Not Found. GPU usage metrics may not be reported. For more information, see https://docs.neptune.ai/help/nvml_error/
+[2023-05-10 14:05:20,463][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/kavisubramanyan/Documents/GitHub/nanobyT5/nanoT5/utils/local_data/train/cache-96931e40d471e405.arrow

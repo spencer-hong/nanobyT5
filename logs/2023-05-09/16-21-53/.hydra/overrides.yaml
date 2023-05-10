@@ -1,0 +1,6 @@
+- optim.name=adafactor
+- optim.name=adamwscale
+- optim.batch_size=128
+- optim.batch_size=144
+- optim.lr_scheduler=legacy
+- optim.lr_scheduler=cosine

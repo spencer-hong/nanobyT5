@@ -1,0 +1,9 @@
+[2023-05-09 16:20:12,132][Main][INFO] - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cpu
+
+Mixed precision type: no
+
+[2023-05-09 16:20:12,132][Main][INFO] - Working directory is /Users/kavisubramanyan/Documents/GitHub/nanobyT5/logs/2023-05-09/16-20-12

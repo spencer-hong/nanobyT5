@@ -1,0 +1,19 @@
+[2023-05-10 14:55:02,198][Main][INFO] - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cpu
+
+Mixed precision type: no
+
+[2023-05-10 14:55:02,198][Main][INFO] - Working directory is /Users/kavisubramanyan/Documents/GitHub/nanobyT5/logs/2023-05-10/14-55-02
+[2023-05-10 14:55:04,905][neptune.internal.hardware.gpu.gpu_monitor][WARNING] - Info (NVML): NVML Shared Library Not Found. GPU usage metrics may not be reported. For more information, see https://docs.neptune.ai/help/nvml_error/
+[2023-05-10 14:55:07,029][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/kavisubramanyan/Documents/GitHub/nanobyT5/nanoT5/utils/local_data/train/cache-96931e40d471e405.arrow
+[2023-05-10 14:55:07,030][datasets.arrow_dataset][WARNING] - Loading cached shuffled indices for dataset at /Users/kavisubramanyan/Documents/GitHub/nanobyT5/nanoT5/utils/local_data/train/cache-24e6e6009fa909d9.arrow
+[2023-05-10 14:55:07,038][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /Users/kavisubramanyan/Documents/GitHub/nanobyT5/nanoT5/utils/local_data/test/cache-5e4b93f6868f2150.arrow
+[2023-05-10 14:55:07,038][datasets.arrow_dataset][WARNING] - Loading cached shuffled indices for dataset at /Users/kavisubramanyan/Documents/GitHub/nanobyT5/nanoT5/utils/local_data/test/cache-48c17077e99c6642.arrow
+[2023-05-10 14:55:18,258][torch._utils_internal][INFO] - dynamo _convert_frame_assert._compile: {'co_name': 'forward', 'co_filename': '/Users/kavisubramanyan/anaconda3/envs/nanoT5/lib/python3.8/site-packages/transformers/models/t5/modeling_t5.py', 'co_firstlineno': 1615, 'cache_size': 0}
+[2023-05-10 14:55:18,264][torch._subclasses.fake_tensor][INFO] - create_mode 0x152f73d90
+[2023-05-10 14:55:20,574][torch._subclasses.fake_tensor][INFO] - create_mode 0x156167670
+[2023-05-10 14:55:23,796][torch._subclasses.fake_tensor][INFO] - create_mode 0x1567e7850
+[2023-05-10 14:55:26,943][torch._subclasses.fake_tensor][INFO] - create_mode 0x1576eea00

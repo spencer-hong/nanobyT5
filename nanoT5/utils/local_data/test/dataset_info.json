@@ -1,0 +1,249 @@
+{
+  "builder_name": "text",
+  "citation": "",
+  "config_name": "default",
+  "dataset_size": 15890,
+  "description": "",
+  "download_checksums": {
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/0.txt": {
+      "num_bytes": 476,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/1.txt": {
+      "num_bytes": 132,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/10.txt": {
+      "num_bytes": 126,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/11.txt": {
+      "num_bytes": 233,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/12.txt": {
+      "num_bytes": 81,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/13.txt": {
+      "num_bytes": 188,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/14.txt": {
+      "num_bytes": 134,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/15.txt": {
+      "num_bytes": 424,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/16.txt": {
+      "num_bytes": 727,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/17.txt": {
+      "num_bytes": 77,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/18.txt": {
+      "num_bytes": 585,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/19.txt": {
+      "num_bytes": 485,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/2.txt": {
+      "num_bytes": 355,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/20.txt": {
+      "num_bytes": 144,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/21.txt": {
+      "num_bytes": 246,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/22.txt": {
+      "num_bytes": 274,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/23.txt": {
+      "num_bytes": 587,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/24.txt": {
+      "num_bytes": 125,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/25.txt": {
+      "num_bytes": 312,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/26.txt": {
+      "num_bytes": 196,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/27.txt": {
+      "num_bytes": 276,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/28.txt": {
+      "num_bytes": 312,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/29.txt": {
+      "num_bytes": 559,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/3.txt": {
+      "num_bytes": 557,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/30.txt": {
+      "num_bytes": 70,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/31.txt": {
+      "num_bytes": 482,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/32.txt": {
+      "num_bytes": 433,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/33.txt": {
+      "num_bytes": 177,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/34.txt": {
+      "num_bytes": 281,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/35.txt": {
+      "num_bytes": 357,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/36.txt": {
+      "num_bytes": 224,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/37.txt": {
+      "num_bytes": 514,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/38.txt": {
+      "num_bytes": 250,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/39.txt": {
+      "num_bytes": 185,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/4.txt": {
+      "num_bytes": 102,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/40.txt": {
+      "num_bytes": 202,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/41.txt": {
+      "num_bytes": 259,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/42.txt": {
+      "num_bytes": 377,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/43.txt": {
+      "num_bytes": 193,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/44.txt": {
+      "num_bytes": 568,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/45.txt": {
+      "num_bytes": 486,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/46.txt": {
+      "num_bytes": 282,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/47.txt": {
+      "num_bytes": 407,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/48.txt": {
+      "num_bytes": 231,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/49.txt": {
+      "num_bytes": 144,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/5.txt": {
+      "num_bytes": 104,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/50.txt": {
+      "num_bytes": 57,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/51.txt": {
+      "num_bytes": 147,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/52.txt": {
+      "num_bytes": 93,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/53.txt": {
+      "num_bytes": 127,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/6.txt": {
+      "num_bytes": 440,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/7.txt": {
+      "num_bytes": 482,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/8.txt": {
+      "num_bytes": 137,
+      "checksum": null
+    },
+    "/Users/kavisubramanyan/Desktop/Renota/Local Training/local_linear_data/9.txt": {
+      "num_bytes": 252,
+      "checksum": null
+    }
+  },
+  "download_size": 15674,
+  "features": {
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 31564,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 15890,
+      "num_examples": 54,
+      "dataset_name": "text"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
