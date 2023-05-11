@@ -20,13 +20,13 @@ data:
   input_length: 512
   mlm_probability: 0.15
   mean_noise_span_length: 3.0
-  num_workers: 2
+  num_workers: 1
   # num_workers: 8
 
 optim:
   name: adamwscale
   base_lr: 2e-2
-  batch_size: 144
+  batch_size: 1
   # total_steps: 65536
   total_steps: 10
   epochs: -1 # If it's > 0 it overwrites total_steps
