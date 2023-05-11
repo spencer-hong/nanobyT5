@@ -89,6 +89,7 @@ def extra_stats(args, model, optimizer):
 
 
 def forward(model, batch, calc_acc=False):
+    print(f'batch: {batch}')
     outputs = model(**batch)
     loss = outputs.loss
 
