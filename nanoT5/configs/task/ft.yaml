@@ -1,6 +1,6 @@
 # @package _global_
 
-mode: 'ft'
+mode: "ft"
 
 data:
   max_seq_len: 1024
