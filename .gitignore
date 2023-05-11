@@ -160,4 +160,4 @@ cython_debug/
 #.idea/
 
 
-*.yaml
+nanoT5/configs/default.yaml
