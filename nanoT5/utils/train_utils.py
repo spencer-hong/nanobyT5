@@ -89,7 +89,10 @@ def extra_stats(args, model, optimizer):
 
 
 def forward(model, batch, calc_acc=False):
-    print(f'batch: {batch}')
+    shape = batch['input_ids'].shape
+    shape2 = batch['labels'].shape
+    print(f'input_id: {shape}')
+    print(f'labels: {shape2}')
     outputs = model(**batch)
     loss = outputs.loss
 
