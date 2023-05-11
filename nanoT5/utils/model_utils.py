@@ -71,7 +71,7 @@ def load_dataset_splits(args):
         # )
 
 
-        os.chdir("/Users/kavisubramanyan/Documents/GitHub/nanobyT5")
+        os.chdir("/content/gdrive/MyDrive/renota_local_train/nanobyT5")
 
         train_dataset = datasets.load_from_disk("nanoT5/utils/local_data/train")
         test_dataset = datasets.load_from_disk("nanoT5/utils/local_data/test")
