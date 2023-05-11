@@ -29,6 +29,7 @@ def main(args):
     Addition
     '''
     # model.config.decoder_start_token_id = model.config.pad_token_id
+    print(f'model: {model}')
     tokenizer = get_tokenizer(args)
     optimizer = get_optimizer(model, args)
     lr_scheduler = get_lr_scheduler(optimizer, args, logger)
