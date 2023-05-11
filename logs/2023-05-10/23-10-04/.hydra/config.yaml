@@ -1,0 +1,41 @@
+mode: pt
+device: gpu
+eval_only: false
+predict_only: false
+seed: 2137
+model:
+  checkpoint_path: ''
+  dropout: 0.0
+  random_init: true
+  compile: true
+data:
+  input_length: 512
+  mlm_probability: 0.15
+  mean_noise_span_length: 3.0
+  num_workers: 2
+optim:
+  name: adamwscale
+  base_lr: 0.02
+  batch_size: 144
+  total_steps: 1
+  epochs: -1
+  warmup_steps: 1
+  lr_scheduler: cosine
+  weight_decay: 0.0
+  grad_clip: 1.0
+  grad_acc: 2
+  final_cosine: 1.0e-05
+eval:
+  every_steps: 300
+  steps: 5
+checkpoint:
+  every_steps: 3
+logging:
+  neptune: true
+  neptune_creds:
+    project: kavisubramanyan2025/local-byt5-train
+    api_token: eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vYXBwLm5lcHR1bmUuYWkiLCJhcGlfdXJsIjoiaHR0cHM6Ly9hcHAubmVwdHVuZS5haSIsImFwaV9rZXkiOiJkNTEwZWMzNS0xNGVkLTRlMzctYmIwYS1kMDhjNjhlOWI1YTUifQ==
+    tags: test_run
+  every_steps: 100
+  grad_l2: true
+  weights_l2: true

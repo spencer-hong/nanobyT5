@@ -1,0 +1,198 @@
+{"obj": {"type": "AssignString", "path": ["sys", "name"], "value": "Untitled"}, "version": 1}
+{"obj": {"type": "AssignString", "path": ["sys", "description"], "value": ""}, "version": 2}
+{"obj": {"type": "AssignString", "path": ["monitoring", "3b2d4909", "hostname"], "value": "seoul"}, "version": 3}
+{"obj": {"type": "AssignString", "path": ["sys", "hostname"], "value": "seoul"}, "version": 4}
+{"obj": {"type": "AssignString", "path": ["monitoring", "3b2d4909", "pid"], "value": "65905"}, "version": 5}
+{"obj": {"type": "AssignString", "path": ["monitoring", "3b2d4909", "tid"], "value": "139984071165760"}, "version": 6}
+{"obj": {"type": "AddStrings", "path": ["sys", "tags"], "values": ["test_run"]}, "version": 7}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": false}, "version": 8}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "3b2d4909", "stdout"]}, "version": 9}
+{"obj": {"type": "ClearStringLog", "path": ["monitoring", "3b2d4909", "stderr"]}, "version": 10}
+{"obj": {"type": "AssignString", "path": ["source_code", "entrypoint"], "value": "main.py"}, "version": 11}
+{"obj": {"type": "UploadFileSet", "path": ["source_code", "files"], "file_globs": ["/data/spencer/byt5/nanobyT5/nanoT5/main.py"], "reset": "False"}, "version": 12}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "3b2d4909", "cpu"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 13}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "3b2d4909", "cpu"]}, "version": 14}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "3b2d4909", "memory"], "min": 0.0, "max": 125.61768341064453, "unit": "GB"}, "version": 15}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "3b2d4909", "memory"]}, "version": 16}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "3b2d4909", "gpu_0"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 17}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "3b2d4909", "gpu_0"]}, "version": 18}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "3b2d4909", "gpu_1"], "min": 0.0, "max": 100.0, "unit": "%"}, "version": 19}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "3b2d4909", "gpu_1"]}, "version": 20}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "3b2d4909", "gpu_memory_0"], "min": 0.0, "max": 48.0, "unit": "GB"}, "version": 21}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "3b2d4909", "gpu_memory_0"]}, "version": 22}
+{"obj": {"type": "ConfigFloatSeries", "path": ["monitoring", "3b2d4909", "gpu_memory_1"], "min": 0.0, "max": 48.0, "unit": "GB"}, "version": 23}
+{"obj": {"type": "ClearFloatLog", "path": ["monitoring", "3b2d4909", "gpu_memory_1"]}, "version": 24}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "3b2d4909", "cpu"], "values": [{"value": 1.6, "step": null, "ts": 1683777051.7062392}]}, "version": 25}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "3b2d4909", "memory"], "values": [{"value": 11.930644989013672, "step": null, "ts": 1683777051.7062392}]}, "version": 26}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "3b2d4909", "gpu_memory_0"], "values": [{"value": 0.54620361328125, "step": null, "ts": 1683777051.7062392}]}, "version": 27}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "3b2d4909", "gpu_memory_1"], "values": [{"value": 0.86212158203125, "step": null, "ts": 1683777051.7062392}]}, "version": 28}
+{"obj": {"type": "AssignString", "path": ["args", "mode"], "value": "pt"}, "version": 29}
+{"obj": {"type": "AssignString", "path": ["args", "device"], "value": "gpu"}, "version": 30}
+{"obj": {"type": "AssignBool", "path": ["args", "eval_only"], "value": false}, "version": 31}
+{"obj": {"type": "AssignBool", "path": ["args", "predict_only"], "value": false}, "version": 32}
+{"obj": {"type": "AssignInt", "path": ["args", "seed"], "value": 2137}, "version": 33}
+{"obj": {"type": "AssignString", "path": ["args", "model", "checkpoint_path"], "value": ""}, "version": 34}
+{"obj": {"type": "AssignFloat", "path": ["args", "model", "dropout"], "value": 0.0}, "version": 35}
+{"obj": {"type": "AssignBool", "path": ["args", "model", "random_init"], "value": true}, "version": 36}
+{"obj": {"type": "AssignBool", "path": ["args", "model", "compile"], "value": true}, "version": 37}
+{"obj": {"type": "AssignInt", "path": ["args", "data", "input_length"], "value": 512}, "version": 38}
+{"obj": {"type": "AssignFloat", "path": ["args", "data", "mlm_probability"], "value": 0.15}, "version": 39}
+{"obj": {"type": "AssignFloat", "path": ["args", "data", "mean_noise_span_length"], "value": 3.0}, "version": 40}
+{"obj": {"type": "AssignInt", "path": ["args", "data", "num_workers"], "value": 1}, "version": 41}
+{"obj": {"type": "AssignInt", "path": ["args", "data", "before_mask_input_length"], "value": 568}, "version": 42}
+{"obj": {"type": "AssignInt", "path": ["args", "data", "target_length"], "value": 114}, "version": 43}
+{"obj": {"type": "AssignInt", "path": ["args", "data", "train_batches"], "value": 1}, "version": 44}
+{"obj": {"type": "AssignInt", "path": ["args", "data", "test_batches"], "value": 1}, "version": 45}
+{"obj": {"type": "AssignString", "path": ["args", "optim", "name"], "value": "adamwscale"}, "version": 46}
+{"obj": {"type": "AssignFloat", "path": ["args", "optim", "base_lr"], "value": 0.02}, "version": 47}
+{"obj": {"type": "AssignInt", "path": ["args", "optim", "batch_size"], "value": 144}, "version": 48}
+{"obj": {"type": "AssignInt", "path": ["args", "optim", "total_steps"], "value": 10}, "version": 49}
+{"obj": {"type": "AssignInt", "path": ["args", "optim", "epochs"], "value": -1}, "version": 50}
+{"obj": {"type": "AssignInt", "path": ["args", "optim", "warmup_steps"], "value": 1}, "version": 51}
+{"obj": {"type": "AssignString", "path": ["args", "optim", "lr_scheduler"], "value": "cosine"}, "version": 52}
+{"obj": {"type": "AssignFloat", "path": ["args", "optim", "weight_decay"], "value": 0.0}, "version": 53}
+{"obj": {"type": "AssignFloat", "path": ["args", "optim", "grad_clip"], "value": 1.0}, "version": 54}
+{"obj": {"type": "AssignInt", "path": ["args", "optim", "grad_acc"], "value": 2}, "version": 55}
+{"obj": {"type": "AssignFloat", "path": ["args", "optim", "final_cosine"], "value": 1e-05}, "version": 56}
+{"obj": {"type": "AssignInt", "path": ["args", "eval", "every_steps"], "value": 100000}, "version": 57}
+{"obj": {"type": "AssignInt", "path": ["args", "eval", "steps"], "value": 5}, "version": 58}
+{"obj": {"type": "AssignFloat", "path": ["args", "eval", "corrected_steps"], "value": 2.5}, "version": 59}
+{"obj": {"type": "AssignInt", "path": ["args", "checkpoint", "every_steps"], "value": 30000}, "version": 60}
+{"obj": {"type": "AssignBool", "path": ["args", "logging", "neptune"], "value": true}, "version": 61}
+{"obj": {"type": "AssignString", "path": ["args", "logging", "neptune_creds", "project"], "value": "kavisubramanyan2025/local-byt5-train"}, "version": 62}
+{"obj": {"type": "AssignString", "path": ["args", "logging", "neptune_creds", "api_token"], "value": "eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vYXBwLm5lcHR1bmUuYWkiLCJhcGlfdXJsIjoiaHR0cHM6Ly9hcHAubmVwdHVuZS5haSIsImFwaV9rZXkiOiJkNTEwZWMzNS0xNGVkLTRlMzctYmIwYS1kMDhjNjhlOWI1YTUifQ=="}, "version": 63}
+{"obj": {"type": "AssignString", "path": ["args", "logging", "neptune_creds", "tags"], "value": "test_run"}, "version": 64}
+{"obj": {"type": "AssignInt", "path": ["args", "logging", "every_steps"], "value": 100}, "version": 65}
+{"obj": {"type": "AssignBool", "path": ["args", "logging", "grad_l2"], "value": true}, "version": 66}
+{"obj": {"type": "AssignBool", "path": ["args", "logging", "weights_l2"], "value": true}, "version": 67}
+{"obj": {"type": "AssignString", "path": ["args", "slurm_id"], "value": "none"}, "version": 68}
+{"obj": {"type": "AssignString", "path": ["args", "working_dir"], "value": "/data/spencer/byt5/nanobyT5/logs/2023-05-10/22-50-49"}, "version": 69}
+{"obj": {"type": "AssignString", "path": ["args", "neptune_id"], "value": "LOC-82"}, "version": 70}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "3b2d4909", "cpu"], "values": [{"value": 7.8, "step": null, "ts": 1683777061.7142155}]}, "version": 71}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "3b2d4909", "memory"], "values": [{"value": 19.571205139160156, "step": null, "ts": 1683777061.7142155}]}, "version": 72}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "3b2d4909", "gpu_memory_0"], "values": [{"value": 1.42218017578125, "step": null, "ts": 1683777061.7142155}]}, "version": 73}
+{"obj": {"type": "LogFloats", "path": ["monitoring", "3b2d4909", "gpu_memory_1"], "values": [{"value": 0.86212158203125, "step": null, "ts": 1683777061.7142155}]}, "version": 74}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777062.6855013}]}, "version": 75}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777062.6859212}]}, "version": 76}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777062.686388}]}, "version": 77}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777062.6868317}]}, "version": 78}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777065.6966574}]}, "version": 79}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777065.7196124}]}, "version": 80}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777065.7204144}]}, "version": 81}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777065.7210276}]}, "version": 82}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777065.9359126}]}, "version": 83}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777065.9368536}]}, "version": 84}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777065.9375026}]}, "version": 85}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777065.937915}]}, "version": 86}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777066.177053}]}, "version": 87}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777066.1776762}]}, "version": 88}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777066.1784081}]}, "version": 89}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777066.1788287}]}, "version": 90}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777066.4204803}]}, "version": 91}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777066.42125}]}, "version": 92}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777066.4219491}]}, "version": 93}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777066.4224055}]}, "version": 94}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777066.663269}]}, "version": 95}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777066.6639066}]}, "version": 96}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777066.6646135}]}, "version": 97}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777066.665014}]}, "version": 98}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777066.9046764}]}, "version": 99}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777066.9053056}]}, "version": 100}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777066.9059806}]}, "version": 101}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777066.9064069}]}, "version": 102}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777067.1456242}]}, "version": 103}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777067.146241}]}, "version": 104}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777067.1469853}]}, "version": 105}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777067.1476243}]}, "version": 106}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777067.386473}]}, "version": 107}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777067.3872476}]}, "version": 108}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777067.3879685}]}, "version": 109}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777067.388381}]}, "version": 110}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777067.627842}]}, "version": 111}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777067.6290762}]}, "version": 112}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777067.6296651}]}, "version": 113}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777067.6303723}]}, "version": 114}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777067.8717241}]}, "version": 115}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777067.8720357}]}, "version": 116}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777067.8724587}]}, "version": 117}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777067.8727672}]}, "version": 118}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777068.1137273}]}, "version": 119}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777068.118604}]}, "version": 120}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777068.1194763}]}, "version": 121}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777068.1198406}]}, "version": 122}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "it trained a step!", "step": null, "ts": 1683777068.355307}]}, "version": 123}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "Exception ignored in: ", "step": null, "ts": 1683777068.402229}]}, "version": 124}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "<function _releaseLock at 0x7f509457ef70>", "step": null, "ts": 1683777068.4027112}]}, "version": 125}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.4030764}]}, "version": 126}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1683777068.4034927}]}, "version": 127}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/logging/__init__.py\", line 227, in _releaseLock\n", "step": null, "ts": 1683777068.4038897}]}, "version": 128}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.4042227}]}, "version": 129}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "def _releaseLock():", "step": null, "ts": 1683777068.4046023}]}, "version": 130}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.4049659}]}, "version": 131}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": " ", "step": null, "ts": 1683777068.4053538}]}, "version": 132}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "KeyboardInterrupt", "step": null, "ts": 1683777068.4057283}]}, "version": 133}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "1", "step": null, "ts": 1683777068.4060664}]}, "version": 134}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": ": ", "step": null, "ts": 1683777068.4065428}]}, "version": 135}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "\n", "step": null, "ts": 1683777068.4068975}]}, "version": 136}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "", "step": null, "ts": 1683777068.4072387}]}, "version": 137}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.407595}]}, "version": 138}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "traceback"], "values": [{"value": "An uncaught exception occurred while run was active on worker seoul.", "step": null, "ts": 1683777068.6070564}, {"value": "Marking run as failed", "step": null, "ts": 1683777068.6070564}, {"value": "Traceback:", "step": null, "ts": 1683777068.6070564}, {"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/runpy.py\", line 194, in _run_module_as_main\n    return _run_code(code, main_globals, None,\n", "step": null, "ts": 1683777068.6070564}, {"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/runpy.py\", line 87, in _run_code\n    exec(code, run_globals)\n", "step": null, "ts": 1683777068.6070564}, {"value": "  File \"/data/spencer/byt5/nanobyT5/nanoT5/main.py\", line 75, in <module>\n    main()\n", "step": null, "ts": 1683777068.6070564}, {"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/main.py\", line 94, in decorated_main\n    _run_hydra(\n", "step": null, "ts": 1683777068.6070564}, {"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/_internal/utils.py\", line 394, in _run_hydra\n    _run_app(\n", "step": null, "ts": 1683777068.6070564}, {"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/_internal/utils.py\", line 457, in _run_app\n    run_and_report(\n", "step": null, "ts": 1683777068.6070564}, {"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/_internal/utils.py\", line 220, in run_and_report\n    return func()\n", "step": null, "ts": 1683777068.6070564}]}, "version": 139}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "traceback"], "values": [{"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/_internal/utils.py\", line 458, in <lambda>\n    lambda: hydra.run(\n", "step": null, "ts": 1683777068.6070564}, {"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/_internal/hydra.py\", line 119, in run\n    ret = run_job(\n", "step": null, "ts": 1683777068.6070564}, {"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/core/utils.py\", line 186, in run_job\n    ret.return_value = task_function(task_cfg)\n", "step": null, "ts": 1683777068.6070564}, {"value": "  File \"/data/spencer/byt5/nanobyT5/nanoT5/main.py\", line 68, in main\n    train(model, train_dataloader, test_dataloader, accelerator,\n", "step": null, "ts": 1683777068.6070564}, {"value": "  File \"/data/spencer/byt5/nanobyT5/nanoT5/utils/train_utils.py\", line 199, in train\n    loss, stats = forward(model, batch)\n", "step": null, "ts": 1683777068.6070564}, {"value": "  File \"/data/spencer/byt5/nanobyT5/nanoT5/utils/train_utils.py\", line 100, in forward\n    stats['loss'] = loss.detach().float().item()\n", "step": null, "ts": 1683777068.6070564}, {"value": "", "step": null, "ts": 1683777068.6070564}]}, "version": 140}
+{"obj": {"type": "AssignBool", "path": ["sys", "failed"], "value": true}, "version": 141}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "Traceback (most recent call last):\n", "step": null, "ts": 1683777068.6094487}]}, "version": 142}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/runpy.py\", line 194, in _run_module_as_main\n", "step": null, "ts": 1683777068.610423}]}, "version": 143}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.610772}]}, "version": 144}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stdout"], "values": [{"value": "Shutting down background jobs, please wait a moment...\n", "step": null, "ts": 1683777068.6115305}]}, "version": 145}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "return _run_code(code, main_globals, None,", "step": null, "ts": 1683777068.6119761}]}, "version": 146}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.612886}]}, "version": 147}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/runpy.py\", line 87, in _run_code\n", "step": null, "ts": 1683777068.613264}]}, "version": 148}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.6136208}]}, "version": 149}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "exec(code, run_globals)", "step": null, "ts": 1683777068.6139855}]}, "version": 150}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.6143613}]}, "version": 151}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/data/spencer/byt5/nanobyT5/nanoT5/main.py\", line 75, in <module>\n", "step": null, "ts": 1683777068.6147292}]}, "version": 152}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.6150923}]}, "version": 153}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "main()", "step": null, "ts": 1683777068.6154597}]}, "version": 154}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.6158364}]}, "version": 155}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/main.py\", line 94, in decorated_main\n", "step": null, "ts": 1683777068.6162117}]}, "version": 156}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.61659}]}, "version": 157}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "_run_hydra(", "step": null, "ts": 1683777068.6169677}]}, "version": 158}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.6173441}]}, "version": 159}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/_internal/utils.py\", line 394, in _run_hydra\n", "step": null, "ts": 1683777068.617718}]}, "version": 160}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.6180966}]}, "version": 161}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "_run_app(", "step": null, "ts": 1683777068.6184907}]}, "version": 162}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.6190922}]}, "version": 163}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/_internal/utils.py\", line 457, in _run_app\n", "step": null, "ts": 1683777068.6198623}]}, "version": 164}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.620256}]}, "version": 165}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "run_and_report(", "step": null, "ts": 1683777068.6206348}]}, "version": 166}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.6214483}]}, "version": 167}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/_internal/utils.py\", line 220, in run_and_report\n", "step": null, "ts": 1683777068.6218069}]}, "version": 168}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.622171}]}, "version": 169}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "return func()", "step": null, "ts": 1683777068.6225367}]}, "version": 170}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.6229105}]}, "version": 171}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/_internal/utils.py\", line 458, in <lambda>\n", "step": null, "ts": 1683777068.6232831}]}, "version": 172}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.6236575}]}, "version": 173}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "lambda: hydra.run(", "step": null, "ts": 1683777068.6240284}]}, "version": 174}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.624406}]}, "version": 175}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/_internal/hydra.py\", line 119, in run\n", "step": null, "ts": 1683777068.6247828}]}, "version": 176}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.6251602}]}, "version": 177}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "ret = run_job(", "step": null, "ts": 1683777068.6255403}]}, "version": 178}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.6259437}]}, "version": 179}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/hydra/core/utils.py\", line 186, in run_job\n", "step": null, "ts": 1683777068.6263232}]}, "version": 180}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.626704}]}, "version": 181}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "ret.return_value = task_function(task_cfg)", "step": null, "ts": 1683777068.627285}]}, "version": 182}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.6281326}]}, "version": 183}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/data/spencer/byt5/nanobyT5/nanoT5/main.py\", line 68, in main\n", "step": null, "ts": 1683777068.628517}]}, "version": 184}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.6288998}]}, "version": 185}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "train(model, train_dataloader, test_dataloader, accelerator,", "step": null, "ts": 1683777068.6297488}]}, "version": 186}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.630117}]}, "version": 187}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/data/spencer/byt5/nanobyT5/nanoT5/utils/train_utils.py\", line 199, in train\n", "step": null, "ts": 1683777068.6304686}]}, "version": 188}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.6308484}]}, "version": 189}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "loss, stats = forward(model, batch)", "step": null, "ts": 1683777068.6312182}]}, "version": 190}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.6315987}]}, "version": 191}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "  File \"/data/spencer/byt5/nanobyT5/nanoT5/utils/train_utils.py\", line 100, in forward\n", "step": null, "ts": 1683777068.6319747}]}, "version": 192}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "    ", "step": null, "ts": 1683777068.6323557}]}, "version": 193}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "stats['loss'] = loss.detach().float().item()", "step": null, "ts": 1683777068.6327353}]}, "version": 194}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.6331115}]}, "version": 195}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "KeyboardInterrupt", "step": null, "ts": 1683777068.6334894}]}, "version": 196}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "", "step": null, "ts": 1683777068.6338646}]}, "version": 197}
+{"obj": {"type": "LogStrings", "path": ["monitoring", "3b2d4909", "stderr"], "values": [{"value": "\n", "step": null, "ts": 1683777068.6342437}]}, "version": 198}

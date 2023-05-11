@@ -1,0 +1,13 @@
+[2023-05-10 23:08:15,715][Main][INFO] - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+[2023-05-10 23:08:15,715][Main][INFO] - Working directory is /data/spencer/byt5/nanobyT5/logs/2023-05-10/23-08-15
+[2023-05-10 23:08:18,206][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /data/spencer/byt5/nanobyT5/nanoT5/utils/local_data/train/cache-55811058ae2730a0.arrow
+[2023-05-10 23:08:18,206][datasets.arrow_dataset][WARNING] - Loading cached shuffled indices for dataset at /data/spencer/byt5/nanobyT5/nanoT5/utils/local_data/train/cache-c639dc3b982c1d18.arrow
+[2023-05-10 23:08:18,210][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /data/spencer/byt5/nanobyT5/nanoT5/utils/local_data/test/cache-4fbda65458655174.arrow
+[2023-05-10 23:08:18,210][datasets.arrow_dataset][WARNING] - Loading cached shuffled indices for dataset at /data/spencer/byt5/nanobyT5/nanoT5/utils/local_data/test/cache-0122d01ccc9e02bd.arrow

@@ -31,7 +31,6 @@ def get_model(args, config):
         model = T5ForConditionalGeneration(
             config,
         )
-        print('randomly initialized')
     else:
         model = T5ForConditionalGeneration.from_pretrained(
             args.model.name,
@@ -78,8 +77,8 @@ def load_dataset_splits(args):
         train_dataset = datasets.load_from_disk("/data/spencer/byt5/nanobyT5/nanoT5/utils/local_data/train")
         test_dataset = datasets.load_from_disk("/data/spencer/byt5/nanobyT5/nanoT5/utils/local_data/test")
 
-        train_dataset.to_iterable_dataset(num_shards=10)
-        test_dataset.to_iterable_dataset(num_shards=10)
+        # train_dataset.to_iterable_dataset(num_shards=10)
+        # test_dataset.to_iterable_dataset(num_shards=10)
 
         # dataset = dataset.remove_columns(
         #     ['timestamp', 'url']

@@ -1,0 +1,24 @@
+[2023-05-10 23:03:59,446][Main][INFO] - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+[2023-05-10 23:03:59,446][Main][INFO] - Working directory is /data/spencer/byt5/nanobyT5/logs/2023-05-10/23-03-59
+[2023-05-10 23:04:01,927][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /data/spencer/byt5/nanobyT5/nanoT5/utils/local_data/train/cache-55811058ae2730a0.arrow
+[2023-05-10 23:04:01,928][datasets.arrow_dataset][WARNING] - Loading cached shuffled indices for dataset at /data/spencer/byt5/nanobyT5/nanoT5/utils/local_data/train/cache-c639dc3b982c1d18.arrow
+[2023-05-10 23:04:01,931][datasets.arrow_dataset][WARNING] - Loading cached processed dataset at /data/spencer/byt5/nanobyT5/nanoT5/utils/local_data/test/cache-4fbda65458655174.arrow
+[2023-05-10 23:04:01,932][datasets.arrow_dataset][WARNING] - Loading cached shuffled indices for dataset at /data/spencer/byt5/nanobyT5/nanoT5/utils/local_data/test/cache-0122d01ccc9e02bd.arrow
+[2023-05-10 23:04:02,991][torch._utils_internal][INFO] - dynamo _convert_frame_assert._compile: {'co_name': 'forward', 'co_filename': '/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/transformers/models/t5/modeling_t5.py', 'co_firstlineno': 1615, 'cache_size': 0}
+[2023-05-10 23:04:02,992][torch._subclasses.fake_tensor][INFO] - create_mode 0x7fe8ef2bfeb0
+[2023-05-10 23:04:04,698][torch._subclasses.fake_tensor][INFO] - create_mode 0x7fe8e0b508b0
+[2023-05-10 23:04:06,829][torch._subclasses.fake_tensor][INFO] - create_mode 0x7fe8e0aee340
+[2023-05-10 23:04:08,743][torch._subclasses.fake_tensor][INFO] - create_mode 0x7fe8e05256d0
+[2023-05-10 23:04:12,193][torch._utils_internal][INFO] - dynamo _convert_frame_assert._compile: {'co_name': '__getitem__', 'co_filename': '/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/torch/nn/modules/container.py', 'co_firstlineno': 290, 'cache_size': 0}
+[2023-05-10 23:04:12,194][torch._subclasses.fake_tensor][INFO] - create_mode 0x7fe8e081cdf0
+[2023-05-10 23:04:12,198][torch._utils_internal][INFO] - dynamo _convert_frame_assert._compile: {'co_name': '_get_abs_string_index', 'co_filename': '/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/torch/nn/modules/container.py', 'co_firstlineno': 281, 'cache_size': 0}
+[2023-05-10 23:04:12,198][torch._subclasses.fake_tensor][INFO] - create_mode 0x7fe8e11edca0
+[2023-05-10 23:04:12,199][torch._utils_internal][INFO] - dynamo _convert_frame_assert._compile: {'co_name': '__len__', 'co_filename': '/home/ssh6847/miniconda3/envs/byt5/lib/python3.8/site-packages/torch/nn/modules/container.py', 'co_firstlineno': 311, 'cache_size': 0}
+[2023-05-10 23:04:12,199][torch._subclasses.fake_tensor][INFO] - create_mode 0x7fe8e09dbb20
