@@ -89,10 +89,10 @@ def extra_stats(args, model, optimizer):
 
 
 def forward(model, batch, calc_acc=False):
-    shape = batch['input_ids'].shape
-    shape2 = batch['labels'].shape
-    print(f'input_id: {shape}')
-    print(f'labels: {shape2}')
+    # shape = batch['input_ids'].shape
+    # shape2 = batch['labels'].shape
+    # print(f'input_id: {shape}')
+    # print(f'labels: {shape2}')
     outputs = model(**batch)
     loss = outputs.loss
 
@@ -192,6 +192,7 @@ def train(model, train_dataloader, test_dataloader, accelerator, lr_scheduler,
         optimizer.zero_grad(set_to_none=True)
 
         for batch_id, batch in enumerate(train_dataloader, start=1):
+            print(f'batch: {batch}')
             if args.current_train_step > args.optim.total_steps:
                 break
 
