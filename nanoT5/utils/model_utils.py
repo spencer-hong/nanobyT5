@@ -31,6 +31,7 @@ def get_model(args, config):
         model = T5ForConditionalGeneration(
             config,
         )
+        print('randomly initialized')
     else:
         model = T5ForConditionalGeneration.from_pretrained(
             args.model.name,
@@ -44,7 +45,7 @@ def get_config(args):
     # config = AutoConfig.from_pretrained(
     #     args.model.name,
     # )
-    config = T5Config()
+    config = T5Config(decoder_start_token_id=0)
     config.dropout_rate = args.model.dropout
     return config
 
@@ -57,6 +58,7 @@ def get_tokenizer(args):
     
     tokenizer = ByT5Tokenizer.from_pretrained("google/byt5-small")
 
+    # print("from tokenizer", tokenizer.convert_tokens_to_ids(['<pad>'])[0])
     tokenizer.model_max_length = int(1e9)
 
     return tokenizer
@@ -71,10 +73,10 @@ def load_dataset_splits(args):
         # )
 
 
-        os.chdir("/content/gdrive/MyDrive/renota_local_train/nanobyT5")
+        # os.chdir("/content/gdrive/MyDrive/renota_local_train/nanobyT5")
 
-        train_dataset = datasets.load_from_disk("nanoT5/utils/local_data/train")
-        test_dataset = datasets.load_from_disk("nanoT5/utils/local_data/test")
+        train_dataset = datasets.load_from_disk("/data/spencer/byt5/nanobyT5/nanoT5/utils/local_data/train")
+        test_dataset = datasets.load_from_disk("/data/spencer/byt5/nanobyT5/nanoT5/utils/local_data/test")
 
         train_dataset.to_iterable_dataset(num_shards=10)
         test_dataset.to_iterable_dataset(num_shards=10)

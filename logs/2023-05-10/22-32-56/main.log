@@ -1,0 +1,9 @@
+[2023-05-10 22:32:56,696][Main][INFO] - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+[2023-05-10 22:32:56,696][Main][INFO] - Working directory is /data/spencer/byt5/nanobyT5/logs/2023-05-10/22-32-56
