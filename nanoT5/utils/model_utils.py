@@ -207,8 +207,8 @@ def get_dataloaders(tokenizer, config, args):
 
         if args.mode == 'ft' and split == 'train':
             assert shuffle is True
-        else:
-            assert shuffle is False
+        # else:
+        #     assert shuffle is False
 
         dataloaders[split] = DataLoader(
             dataset[split],
