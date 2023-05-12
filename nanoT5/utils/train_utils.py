@@ -194,8 +194,12 @@ def train(model, train_dataloader, test_dataloader, accelerator, lr_scheduler,
         # dataloader__ = iter(train_dataloader)/
         for batch_id, batch in enumerate(train_dataloader, start=1):
             print(len(train_dataloader)) # why is train dataloader only length of 1?
-            print("why is it always", batch_id) 
-            print(batch, "batch is actually changing though...")
+            # print("why is it always", batch_id) 
+            # print(batch, "batch is actually changing though...")
+            for batch_id_2, batch2 in enumerate(train_dataloader, start = 1):
+                print(f'batch id: {batch_id_2}')
+                print(f'batch: {batch2}')
+            
 
             if args.current_train_step > args.optim.total_steps:
                 break
