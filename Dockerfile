@@ -1,4 +1,5 @@
-FROM nvidia/cuda
+# FROM nvidia/cuda
+FROM 763104351884.dkr.ecr.us-east-1.amazonaws.com/tensorflow-training:2.12.0-cpu-py310-ubuntu20.04-ec2
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
