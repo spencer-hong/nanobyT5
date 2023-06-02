@@ -161,3 +161,4 @@ cython_debug/
 
 
 # nanoT5/configs/default.yaml
+nanoT5/logs
