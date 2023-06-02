@@ -17,7 +17,6 @@ from .utils import (
     get_config,
 )
 
-
 @hydra.main(config_path="configs", config_name="default", version_base='1.1')
 def main(args):
     accelerator = Accelerator(cpu=args.device == "cpu")
@@ -69,6 +68,7 @@ def main(args):
               lr_scheduler, optimizer, logger, args, tokenizer)
 
     logger.finish()
+    accelerator.save_state(output_dir="/results/")
 
 
 if __name__ == "__main__":

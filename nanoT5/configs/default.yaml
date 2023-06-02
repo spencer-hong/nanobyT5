@@ -11,7 +11,7 @@ seed: 2137
 
 model:
   # name:
-  checkpoint_path: ""
+  checkpoint_path: "/results/"
   dropout: 0.0
   random_init: true
   compile: true # Pytorch 2.0
@@ -20,18 +20,18 @@ data:
   input_length: 512
   mlm_probability: 0.15
   mean_noise_span_length: 3.0
-  num_workers: 2
-  # num_workers: 8
+  # num_workers: 2
+  num_workers: 8
 
 optim:
   name: adamwscale
   base_lr: 2e-2
   batch_size: 72 #changed from 144
   # total_steps: 65536
-  total_steps: 1
+  total_steps: 2778
   epochs: -1 # If it's > 0 it overwrites total_steps
   # warmup_steps: 10000
-  warmup_steps: 1
+  warmup_steps: 200
   lr_scheduler: cosine
   weight_decay: 0.0
   grad_clip: 1.0
