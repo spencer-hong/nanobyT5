@@ -68,7 +68,7 @@ def main(args):
               lr_scheduler, optimizer, logger, args, tokenizer)
 
     logger.finish()
-    accelerator.save_state(output_dir="/results/")
+    accelerator.save_state(output_dir="results/")
 
 
 if __name__ == "__main__":
