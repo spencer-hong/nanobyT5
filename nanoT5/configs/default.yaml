@@ -11,7 +11,7 @@ seed: 2137
 
 model:
   # name:
-  checkpoint_path: "results/"
+  checkpoint_path: ""
   dropout: 0.0
   random_init: true
   compile: true # Pytorch 2.0
