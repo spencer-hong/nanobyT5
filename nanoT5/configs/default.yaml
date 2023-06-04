@@ -44,7 +44,7 @@ eval:
   steps: 5
 
 checkpoint:
-  every_steps: 3
+  every_steps: 10
 
 logging:
   neptune: true
