@@ -49,7 +49,7 @@ checkpoint:
 logging:
   neptune: true
   neptune_creds:
-    project: "kavisubramanyan2025/local-byt5-train"
+    project: "kavisubramanyan2025/byt5-ocr-train"
     api_token: ""
     tags: "test_run"
   every_steps: 100
