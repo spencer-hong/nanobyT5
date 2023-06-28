@@ -142,7 +142,7 @@ def process_dataset(dataset_splits, args, tokenizer):
                     'tokenizer': tokenizer,
                     'in_length': before_mask_input_length,
                 },
-                remove_columns=['text'],
+                remove_columns=['ocr_err'],
             )
 
             # dataset_split = dataset_split.shuffle(buffer_size=10_000, seed=args.seed)
